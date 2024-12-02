@@ -4,12 +4,12 @@ public class Aluno {
 
     private static int numero = 0;
 
-    private int nome;
-    private int peso;
-    private int altura;
+    private String nome;
+    private Double peso;
+    private int altura; //em centímetros
     private boolean treina;
 
-    public Aluno(int nome, int peso, int altura, boolean treina) {
+    public Aluno(String nome, Double peso, int altura, boolean treina) {
         this.nome = nome;
         this.peso = peso;
         this.altura = altura;
@@ -25,19 +25,19 @@ public class Aluno {
         Aluno.numero = numero;
     }
 
-    public int getNome() {
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(int nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public int getPeso() {
+    public Double getPeso() {
         return peso;
     }
 
-    public void setPeso(int peso) {
+    public void setPeso(Double peso) {
         this.peso = peso;
     }
 
